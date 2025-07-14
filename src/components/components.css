@@ -1,0 +1,658 @@
+.container {
+    margin: 0;
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+    background-color: cyan;
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(20px);
+    z-index: -1;
+    opacity: 70%;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.nav_home{
+    position: fixed;
+}
+
+.title-div{
+    margin-left: 20px;
+}
+
+.title-text{
+    font-size: 23px;
+    font-family: arial;
+    font-weight: bold;
+
+    color: black;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.sign-buttons{
+    display: flex;
+    gap: 10px;
+
+    margin-right: 20px;
+}
+
+.sign-button{
+    font-size: 13px;
+    font-family: arial;
+    font-weight: bold;
+
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 20px;
+    border: solid 1px black;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sign-button:hover{
+    transform: scale(1.05);
+}
+
+.signin{
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: 0.3s;
+}
+
+.signin:hover{
+    background-color: rgba(0, 255, 255, 0.5);
+}
+
+.signup{
+    background-color: black;
+    color: whitesmoke;
+    transition: 0.3s;
+}
+
+.signup:hover{
+    background-color: rgba(0, 255, 255, 0.5);
+    color: black;
+}
+
+
+.main-hero{
+    width: 100%;
+    height: 100vh;
+}
+
+/*SIGN IN*/
+.signin-container nav{
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.5);
+
+}
+
+.title-signin{
+    cursor: pointer;
+}
+
+.main-signin{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background: cyan;
+    z-index: 0;
+}
+
+.main-signin::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(20px);
+    z-index: -1;
+    opacity: 70%;
+}
+
+
+.signin-text{
+    font-size: 25px;
+    font-family: arial;
+    font-weight: bold;
+    margin: 0;
+    margin-top: -10px;
+}
+
+.signin-form{
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 350px;
+    height: 300px;
+
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.signin-form input{
+    width: 70%;
+    height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    border: solid 1px gray;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+
+    transition: 0.3s;
+}
+
+.signin-form input:hover{
+    transform: scale(1.03);
+}
+
+.signin-form button{
+    width: 76%;
+    height: 40px;
+
+    border-radius: 50px;
+    font-size: 13px;
+    font-family: arial;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    
+    transition: 0.3s;
+}
+
+.signin-form button:hover{
+    transform: scale(1.03);
+    background-color: cyan;
+    color: black;
+}
+
+.signin-container footer{
+    position: fixed;
+    bottom: 0;
+}
+
+/*SIGN UP*/
+.signup-container nav{
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.title-signup{
+    cursor: pointer;
+}
+
+.main-signup{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background: cyan;
+    z-index: 0;
+}
+
+.main-signup::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(20px);
+    z-index: -1;
+    opacity: 70%;
+}
+
+
+.signup-text{
+    font-size: 25px;
+    font-family: arial;
+    font-weight: bold;
+    margin: 0;
+    margin-top: -10px;
+}
+
+.signup-form{
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 350px;
+    height: 400px;
+
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.signup-form input{
+    width: 70%;
+    height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    border: solid 1px grey;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+
+    transition: 0.3s;
+}
+
+.signup-form input:hover{
+    transform: scale(1.03);
+}
+
+.signup-form button{
+    width: 76%;
+    height: 40px;
+
+    border-radius: 50px;
+    font-size: 13px;
+    font-family: arial;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    
+    transition: 0.3s;
+}
+
+.signup-form button:hover{
+    transform: scale(1.03);
+    background-color: cyan;
+    color: black;
+}
+
+.signup-container footer{
+    position: fixed;
+    bottom: 0;
+}
+
+
+/*HOME*/
+.main-home{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-home section{
+    width: 100%;
+    height: 100vh;
+}
+
+#section1{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.section1-div{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.title-home{
+    cursor: pointer;
+}
+
+.welcome-text{
+    font-size: 10vw;
+    font-family: "tangerine", cursive;
+    font-weight: bold;
+    line-height: 0.8;
+    color: white;
+
+    text-shadow: 5px 5px 5px black;
+
+    margin: 0;
+    margin-top: 50px;
+}
+
+.buysell-buttons{
+    display: flex;
+    gap: 30px;
+
+}
+
+.buysell-button{
+    font-size: 13px;
+    font-family: arial;
+    font-weight: bold;
+
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    border: solid 1px black;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.buysell-button:hover{
+    transform: scale(1.05);
+}
+
+.buy{
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: 0.3s;
+}
+
+.buy:hover{
+    background-color: cyan;
+}
+
+.sell{
+    background-color: black;
+    color: whitesmoke;
+    transition: 0.3s;
+}
+
+.sell:hover{
+    background-color: cyan;
+    color: black;
+}
+
+#section2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section2-div{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 200px;
+
+}
+
+.section2-div h2{
+    font-family: arial;
+    font-size: 30px;
+
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.artist-card-div{
+    display: flex;
+    gap: 50px;
+
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.artist-card{
+    font-family: arial;
+    font-size: 15px;
+
+    width: 350px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.artist-card img{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.artist-button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.artist-button p{
+    margin: 0;
+}
+
+.contact-button{
+    font-size: 10px;
+    font-family: arial;
+    font-weight: bold;
+
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 20px;
+    border: solid 1px black;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-button:hover{
+    transform: scale(1.05);
+    background-color: cyan;
+}
+
+.delete-button{
+    font-size: 10px;
+    font-family: arial;
+    font-weight: bold;
+
+    margin-left: 10px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+    border: solid 1px black;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.delete-button:hover{
+    transform: scale(1.05);
+    background-color: red;
+}
+
+.logout-button{
+    font-size: 10px;
+    font-family: arial;
+    font-weight: bold;
+
+    margin-right: 20px;
+    padding: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 20px;
+    border: solid 1px black;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.logout-button:hover{
+    transform: scale(1.05);
+    background-color: cyan;
+}
+
+
+#section3{
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sell-form{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.showcase-text{
+    font-size: 50px;
+    font-family: "Tangerine", cursive;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 20px;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+
+.sell-form label{
+    font-size: 15px;
+    font-family: arial;
+
+    font-weight: bold;
+}
+
+.inputs-div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.inputs-div input{
+    width: 90%;
+    height: 30px;
+
+    border: solid 1px grey;
+    border-radius: 50px;
+    padding-left: 5%;
+    padding-right: 5%;
+
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.input-file{
+    margin-top: 10px;
+}
+
+.upload-button{
+    width: 100%;
+    height: 30px;
+    border-radius: 50px;
+    margin-top: 10px;
+
+    font-size: 13px;
+    font-family: arial;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.upload-button:hover{
+    transform: scale(1.03);
+    background-color: cyan;
+    color: black;
+}
+
+footer{
+    width: 100%;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: -1px -1px 5px rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.copyright-div{
+    font-size: 13px;
+    font-family: arial;
+
+    margin-left: 20px;
+}
+
+.contact-div{
+    display: flex;
+    gap: 20px;
+
+    margin-right: 20px;
+}
+
+.contact-div img{
+    height: 30px;
+    width: 30px;
+    opacity: 70%;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.contact-div img:hover{
+    opacity: 100%;
+    transform: scale(1.05);
+}
