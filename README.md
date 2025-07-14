@@ -18,14 +18,12 @@
 - Due to limitations of free PHP hosting services (no database support, no file upload), this project is **not live online yet**. Instead, feel free to explore the complete code here on GitHub.
 
 ## Screenshots
-<img width="1450" height="902" alt="f_web1" src="https://github.com/user-attachments/assets/258b1243-2ff7-4430-b733-bfb4f6c70b05" />
-<img width="1472" height="906" alt="f_web2" src="https://github.com/user-attachments/assets/a634a704-e9ec-4ee3-9313-0141114d2d3e" />
-<img width="1472" height="902" alt="f_web3" src="https://github.com/user-attachments/assets/125b7bd0-1935-4bc1-859c-dad9dc7437f8" />
-<img width="1452" height="897" alt="f_web4" src="https://github.com/user-attachments/assets/15664f35-ebd9-4c5f-8977-b1b953f3db2e" />
-<img width="1451" height="906" alt="f_web5" src="https://github.com/user-attachments/assets/5c0f34d5-587e-479e-aee0-6333936c20c9" />
+<img width="1897" height="908" alt="f_web1" src="https://github.com/user-attachments/assets/f39dda90-267a-40b2-aee3-0db88554819c" />
+<img width="1917" height="910" alt="f_web2" src="https://github.com/user-attachments/assets/4eef550e-5ae5-4920-ba0a-af74040bb2b3" />
+<img width="1915" height="913" alt="f_web3" src="https://github.com/user-attachments/assets/43ef19ee-c740-4660-9500-4a395eb46793" />
+<img width="1897" height="906" alt="f_web4" src="https://github.com/user-attachments/assets/613decc4-693b-4699-a95b-e802c2bfe133" />
+<img width="1895" height="907" alt="f_web5" src="https://github.com/user-attachments/assets/7973fc43-10a8-45b1-9a7d-39d22522f524" />
 
 ## Created By
 -Jai Verzosa
 🔗 https://jairaericyn.netlify.app/
-
-
